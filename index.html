@@ -1,1 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>三三の专属早安</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #ffe6e6;
+            margin: 0;
+            font-family: 'Arial', sans-serif;
+            color: #d9534f;
+            background-image: url('https://4kwallpapers.com/images/walls/thumbs_3t/15895.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .card {
+            background: rgba(255, 255, 255, 0.8);
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+            text-align: center;
+            max-width: 500px;
+            width: 90%;
+        }
+        .card h1 {
+            margin: 0 0 20px;
+            font-size: 28px;
+            position: relative;
+        }
+        .card h1::before {
+            content: "💖";
+            position: absolute;
+            left: -30px;
+            top: 0;
+        }
+        .card h1::after {
+            content: "💖";
+            position: absolute;
+            right: -30px;
+            top: 0;
+        }
+        .card p {
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        .date {
+            font-size: 16px;
+            color: #c9302c;
+            margin-top: 10px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+        .buttons button {
+            padding: 10px 20px;
+            font-size: 18px;
+            color: white;
+            background-color: #d9534f;
+            border: none;
+            border-radius: 25px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .buttons button:hover {
+            background-color: #c9302c;
+            transform: scale(1.1);
+        }
+        .hearts {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+        .hearts span {
+            font-size: 24px;
+            margin: 0 10px;
+            animation: heartBeat 1s infinite;
+        }
+        @keyframes heartBeat {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.2); }
+        }
+        .animals {
+            margin-top: 20px;
+        }
+        .animals img {
+            width: 50px;
+            height: 50px;
+            transition: transform 0.3s;
+        }
+        .animals img:hover {
+            transform: rotate(20deg) scale(1.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="card">
+        <h1>亲爱的三三皇上</h1>
+        <p>早上好~</p>
+        <!-- 新增日期信息 -->
+        <p class="date">今天是2025年3月24日 农历二月廿五</p>
+        <div class="buttons">
+            <button onclick="showLoveMessage()">今日名言</button>
+            <button onclick="showHoroscope()">今日运势</button>
+            <button onclick="showNews()">今日天气</button>
+        </div>
+        <div class="hearts">
+            <span>❤️</span><span>❤️</span><span>❤️</span>
+        </div>
+        <div class="animals">
+            <img src="https://img.icons8.com/ios/452/cat.png" alt="小猫">
+            <img src="https://img.icons8.com/ios/452/dog.png" alt="小狗">
+        </div>
+    </div>
+
+    <script>
+        function showLoveMessage() {
+            alert("一闪一闪亮晶晶，好像你的身体，藏在众多孤星之中还能找得到你❤️");
+        }
+
+        function showHoroscope() {
+            alert("宜：吃好喝好   忌：长时间疲惫");
+        }
+
+        function showNews() {
+            alert("长沙今天晴，气温12-28C°，出门注意防晒哦~");
+        }
+    </script>
+</body>
+</html>
 
